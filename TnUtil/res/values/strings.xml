@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AndroidCustomDialogActivity!</string>
+    <string name="app_name">Android Custom Dialog</string>
+ <!-- <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style> -->
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/abc</item>
+        <item name="android:windowExitAnimation">@anim/abc1</item>
+    </style>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="message">Message</string>
+</resources>
