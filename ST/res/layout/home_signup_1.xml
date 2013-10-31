@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/heder_bck" >
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/signup_1_text" />
+
+        <Button
+            android:id="@+id/stripper_header_next"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cbtn_next" />
+
+        <Button
+            android:id="@+id/stripper_signup1_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cbtn_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.tny.utils.MyTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Please Provide Following to"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/red" />
+
+            <com.tny.utils.MyTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="GET STARTED!"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/join"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/stripper_signup1_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint=" Your Full Name"
+                android:inputType="textCapSentences"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/stripper_signup1_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  User name"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" >
+            </EditText>
+
+            <com.tny.utils.MyTextView
+                android:id="@+id/changePwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="change password ?"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/stripper_signup1_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/stripper_signup1_conformpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint=" Confirm password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/stripper_signup1_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:hint="  Email"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/stripper_signup1_confirmemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:hint=" Confirm Email"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+            
+            <EditText
+                android:id="@+id/stripper_signup1_contactno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:hint=" Enter contact number"
+                android:imeOptions="actionDone"
+                android:lines="1"
+                android:inputType="number"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+            
+            <RelativeLayout
+                android:id="@+id/relative_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/stripper_signup1_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/pic_upload"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint=" Picture"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/stripper_signup1_selectimage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/button_selectimage_dr" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" >
+
+                <com.tny.utils.MyTextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text=" *NO NUDITY"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/red" />
+
+                <com.tny.utils.MyTextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/textView4"
+                    android:text="Mandatory"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

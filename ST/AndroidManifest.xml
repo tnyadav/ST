@@ -1,0 +1,127 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.volvr.search"
+    android:versionCode="1"
+    android:versionName="1.0"
+     >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:name="com.tny.volvr.home.UILApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tny.volvr.base.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tny.volvr.base.MainTabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tny.volvr.home.HomeLogin"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tny.volvr.dancer.home.DancerSignup1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tny.volvr.dancer.home.DancerSignup2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tny.volvr.dancer.home.DancerSignup3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+<!--         <activity -->
+<!--             android:name="com.tny.volvr.home.Subscription" -->
+<!--             android:screenOrientation="portrait" -->
+<!--             android:theme="@android:style/Theme.NoTitleBar" > -->
+<!--         </activity> -->
+        <activity
+            android:name="com.tny.volvr.home.TabHome"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+<!--         <activity -->
+<!--             android:name="com.tny.volvr.dancer.home.DancerTravalStatus" -->
+<!--             android:screenOrientation="portrait" -->
+<!--             android:theme="@android:style/Theme.NoTitleBar" > -->
+<!--         </activity> -->
+<!--         <activity -->
+<!--             android:name="com.tny.volvr.dancer.home.DancerAddMore" -->
+<!--             android:screenOrientation="portrait" -->
+<!--             android:theme="@android:style/Theme.NoTitleBar" > -->
+<!--         </activity> -->
+<!--         <activity -->
+<!--             android:name="com.tny.volvr.home.ImagePagerActivity" -->
+<!--             android:screenOrientation="portrait" -->
+<!--             android:theme="@android:style/Theme.NoTitleBar" > -->
+<!--         </activity> -->
+        <activity
+            android:name="com.tny.volvr.club.home.ClubSignup1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tny.volvr.club.home.ClubSignup2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tny.volvr.club.home.ClubSignup3"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tny.volvr.fan.home.FanSignup1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.tny.volvr.fan.home.FanSignup2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.tny.utils.CountryOrState" android:theme="@android:style/Theme.Dialog"></activity>
+        
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/heder_bck" >
+
+        <TextView
+            android:id="@+id/ImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/add_offer_header"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <ScrollView 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:scrollbars="none"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+
+    <com.tny.utils.MyTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/add_offer_offer_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/field"
+        android:padding="5dip"
+        android:textColor="#ffff" />
+
+    <com.tny.utils.MyTextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Offer Discription" />
+
+    <EditText
+        android:id="@+id/add_offer_offer_doscription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/field"
+        android:gravity="top|left"
+        android:inputType="textPostalAddress"
+        android:padding="5dip"
+        android:textColor="#ffff" />
+
+         <com.tny.utils.MyTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="From (start date)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/addoffer_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edittext_back"
+                    android:editable="false"
+                    android:ems="10"
+                    android:height="50dp"
+                    android:hint="  MM/DD/YYYY"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                     android:lines="1"
+                android:ellipsize="end"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/addoffer_startdate_calendar"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stripper_add_schedule_startdate_calendar"
+                  
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/cal_icon" />
+            </RelativeLayout>
+
+            <com.tny.utils.MyTextView
+                android:id="@+id/edt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="To (end date)"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/addoffer_enddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/edittext_back"
+                    android:editable="false"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:height="50dp"
+                    android:hint="  MM/DD/YYYY"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/addoffer_enddate_calendar"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stripper_add_schedule_enddate"
+                   
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/cal_icon" />
+            </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/add_offer_cancel"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:background="@drawable/add_offers_cancel" />
+
+<View android:layout_height="35dp"
+    
+    android:layout_width="0dp"
+    android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/add_offer_add_another"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/add_offers_another" />
+
+        <Button
+            android:id="@+id/add_offer_save"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:background="@drawable/add_offers_save" />
+
+<!--         <Button -->
+<!--             android:id="@+id/add_offer_add_another" -->
+<!--             android:layout_width="120dp" -->
+<!--             android:layout_height="40dp" -->
+           
+<!--             android:background="@drawable/add_offers_another" -->
+<!--             /> -->
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

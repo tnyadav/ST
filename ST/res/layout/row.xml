@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+     <EditText
+                android:id="@+id/stripper_signup2_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Club Name "
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/stripper_signup2_contactno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Club Contact Number"
+                android:inputType="numberSigned"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+            <EditText
+                android:id="@+id/stripper_signup2_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Club Email Address"
+                
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+            <EditText
+                android:id="@+id/stripper_signup2_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:gravity="top|left"
+                android:scrollHorizontally="false" 
+                android:hint=" Club Address"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:paddingLeft="7dp"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+    
+</LinearLayout>

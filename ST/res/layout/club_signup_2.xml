@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/heder_bck" >
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/signup_2_txt" />
+
+        <Button
+            android:id="@+id/club_signup2_header_next1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cbtn_next"
+           />
+        <Button
+            android:id="@+id/club_signup2_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/cbtn_back"
+           
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/parentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <Button
+                android:id="@+id/club_signup2_country"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/spnner1"
+                android:gravity="center_vertical|left"
+                android:hint="Country"
+                android:paddingLeft="5dp"
+              
+               
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/club_signup2_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                 android:paddingLeft="5dp" 
+                android:background="@drawable/spnner1"
+                android:gravity="center_vertical|left"
+                android:hint="State"
+              
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/club_signup2_license"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spnner_upload"
+                android:gravity="center_vertical|left"
+                android:hint=" Upload License Copy"
+              
+                android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4" >
+
+                <com.tny.utils.MyTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="You will start receiving fonds once your license verified"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/darkyello" />
+
+                <com.tny.utils.MyTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="Optional"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/club_signup2_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Zip Code"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="8"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" >
+
+            </EditText>
+
+ <com.tny.utils.MyTextView
+     android:id="@+id/textView2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:gravity="center_vertical|left"
+     android:text="Working At"
+     android:visibility="gone"
+     android:textAppearance="?android:attr/textAppearanceSmall"
+     android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/club_signup2_workingat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spnner1"
+                android:gravity="center_vertical|left"
+                android:hint="Others"
+                android:visibility="gone"
+               
+                android:paddingLeft="7dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+          
+            <EditText
+                android:id="@+id/club_signup2_wagerate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Wage Rate"
+                android:inputType="number"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/club_signup2_referanceid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Referral ID"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/heder_bck" >
+
+        <Button
+            android:id="@+id/contact_us_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cbtn_back" />
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/refral_details" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+      
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="Number of user joined by your referral"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/red" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:background="@drawable/box">
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+        <com.tny.utils.MyTextView
+            android:id="@+id/nameedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:hint=" Fans" />
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/refral_details_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:hint=" 5" />
+        
+        </RelativeLayout>
+         <com.tny.utils.MyTextView
+            android:id="@+id/stripper_view_reviews_ratingtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />       
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+        <com.tny.utils.MyTextView
+            android:id="@+id/nameedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:hint=" Clubs" />
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/refral_details_clubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:hint=" 16" />
+
+        </RelativeLayout>
+        <com.tny.utils.MyTextView
+            android:id="@+id/stripper_view_reviews_ratingtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />    
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+        <com.tny.utils.MyTextView
+            android:id="@+id/nameedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:hint=" Strippers" />
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/refral_details_strippers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:hint=" 17" />
+
+        </RelativeLayout>
+        <com.tny.utils.MyTextView
+            android:id="@+id/stripper_view_reviews_ratingtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />    
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+        <com.tny.utils.MyTextView
+            android:id="@+id/nameedittext"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:hint="Total Free Subscription left month" />
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/refral_details_subscription_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:hint=" 17" />
+
+        </RelativeLayout>
+         
+        </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

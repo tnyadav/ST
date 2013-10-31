@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/heder_bck" >
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/TextView1"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Payment Process"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/payment_processr_next1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cbtn_next" />
+
+        <Button
+            android:id="@+id/payment_process_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cbtn_back" />
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_paypal" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+     
+        android:orientation="vertical" >
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/payment_process_dancername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Medium Text"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/payment_process_dancerclunname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+           android:text="Medium Text"
+            android:textSize="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/payment_process_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+             android:textSize="15dp"
+           android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/payment_process_ammount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+             android:textSize="15dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
+
+<ScrollView
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <EditText
+                android:id="@+id/payment_process_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  first Name"
+                    android:gravity="center_vertical|left"
+                android:lines="1"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        <EditText
+                android:id="@+id/payment_process_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                    android:gravity="center_vertical|left"
+                android:hint="  Last name"
+                 android:paddingLeft="5dp"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/payment_process_cardtype"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+             android:paddingLeft="5dp"
+             android:ems="10"
+             android:gravity="center_vertical|left"
+            android:background="@drawable/spnner1"
+            android:hint="  Select Card Type"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/payment_process_cardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_2_edittext_back"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="center_vertical|left"
+            android:hint="  Card Number"
+            android:inputType="number"
+            android:lines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/payment_process_month"
+                android:layout_width="match_parent"
+                    android:gravity="center_vertical|left"
+                android:layout_height="50dp"
+                 android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:hint=" Select Month"
+                android:ems="10"
+                android:textSize="18dp"
+                android:background="@drawable/spnner11"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/payment_process_year"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                 android:paddingLeft="5dp"
+                 android:hint=" Select Year"
+                     android:gravity="center_vertical|left"
+                 android:ems="10"
+                 android:textSize="18dp"
+                android:background="@drawable/spnner11"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/payment_process_cardvarificationnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_2_edittext_back"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="center_vertical|left"
+            android:hint="  Card Verification Number"
+            android:inputType="number"
+            android:lines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+                android:id="@+id/payment_process_address1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                 android:paddingLeft="5dp"
+                     android:gravity="center_vertical|left"
+                android:ems="10"
+                android:hint="  Address 1:"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        <EditText
+                android:id="@+id/payment_process_address2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                 android:paddingLeft="5dp"
+                     android:gravity="center_vertical|left"
+                android:hint="  Address 2:"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+         <EditText
+                android:id="@+id/payment_process_city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                 android:paddingLeft="5dp"
+                     android:gravity="center_vertical|left"
+                android:hint="  City"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/payment_process_country"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spnner1"
+                      android:gravity="center_vertical|left"
+                android:hint="  Country"
+                android:ems="10"
+                 android:paddingLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/payment_process_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                    android:gravity="center_vertical|left"
+                 android:paddingLeft="5dp"
+                 android:ems="10"
+                android:background="@drawable/spnner1"
+                android:hint="  State"
+              
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/payment_process_zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_2_edittext_back"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="center_vertical|left"
+            android:hint=" Zip Code"
+            android:inputType="number"
+            android:lines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

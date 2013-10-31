@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/heder_bck" >
+        
+        <Button
+            android:id="@+id/back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/cbtn_back"
+            android:layout_centerVertical="true"
+            />
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Details"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/red" />
+        
+    </RelativeLayout>
+
+<ListView
+    android:id="@+id/queue_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:scrollbars="none"
+    android:divider="@drawable/line"
+    android:background="@drawable/box">
+</ListView>
+
+</LinearLayout>

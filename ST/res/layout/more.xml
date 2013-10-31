@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bck" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/heder_bck" >
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_text" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+             <com.tny.utils.MyTextView
+                android:id="@+id/more_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/line"
+                android:drawableLeft="@drawable/history"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="left|center_vertical"
+                android:text="  Offer"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:textColor="@color/white" />
+
+            <com.tny.utils.MyTextView
+                android:id="@+id/more_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/line"
+                android:drawableLeft="@drawable/more_search"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="left|center_vertical"
+                android:text="  Queue Management"
+                android:textSize="20dp"
+                android:padding="7dp"
+                android:textColor="@color/white" /> 
+             
+             <com.tny.utils.MyTextView
+                android:id="@+id/more_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/line"
+                android:drawableLeft="@drawable/notification"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="left|center_vertical"
+                android:text="  Notifications"
+                android:padding="7dp"
+                android:textSize="20dp"
+                android:textColor="@color/white" />
+
+             <com.tny.utils.MyTextView
+                android:id="@+id/more_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/line"
+                android:drawableLeft="@drawable/history"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="left|center_vertical"
+                android:text="  History"
+                android:padding="7dp"
+                android:textSize="20dp"
+                android:textColor="@color/white" />
+
+             <com.tny.utils.MyTextView
+                android:id="@+id/more_favorate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/line"
+                android:drawableLeft="@drawable/favorite"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="left|center_vertical"
+                android:text="  Favourite"
+                android:padding="7dp"
+                android:textSize="20dp"
+                android:textColor="@color/white" />
+
+             <com.tny.utils.MyTextView
+                android:id="@+id/more_refferaldetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/line"
+                android:drawableLeft="@drawable/referral_detail"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="left|center_vertical"
+                android:text="  Referral Detail"
+                android:padding="7dp"
+                android:textSize="20dp"
+                android:textColor="@color/white" />
+
+            <com.tny.utils.MyTextView
+                android:id="@+id/more_contactus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/line"
+                android:drawableLeft="@drawable/contact"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="left|center_vertical"
+                android:text="  Contact Us"
+                android:padding="7dp"
+                android:textSize="20dp"
+                android:textColor="@color/white" />
+
+            <com.tny.utils.MyTextView
+                android:id="@+id/more_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/line"
+                android:drawableLeft="@drawable/help"
+                android:drawableRight="@drawable/arrow"
+                android:gravity="left|center_vertical"
+                android:text="  Help/FAQ"
+                android:padding="7dp"
+                android:textSize="20dp"
+                android:textColor="@color/white" />
+
+             <com.tny.utils.MyTextView
+                android:id="@+id/more_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/logout"
+                android:drawableRight="@drawable/arrow"
+                android:padding="7dp"
+                android:textSize="20dp"
+                android:gravity="left|center_vertical"
+                android:text="  Log out"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

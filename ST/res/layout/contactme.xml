@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:layout_margin="10dp"
+>
+    <TextView
+       android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3dip"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:text="      krishna kumar verma    @ copyright 2012"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text=" Message "
+        android:textColor="#fff"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    
+    <LinearLayout  
+    android:id="@+id/imagebuttongroup" 
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/message"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+  <Button
+      android:id="@+id/okbutton"
+      android:layout_width="fill_parent"
+      android:layout_height="40dp"
+      android:layout_marginLeft="80dp"
+      android:layout_marginRight="80dp"
+      android:layout_weight="1"
+      android:background="@drawable/button_continue"
+      android:gravity="center"
+      android:text="OK"
+      android:textColor="#fff"
+      android:textSize="15dp"
+      android:textStyle="bold" />
+
+</LinearLayout>
+
+</RelativeLayout>

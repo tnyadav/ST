@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+
+    <com.tny.utils.MyTextView
+        android:id="@+id/view_history_row_name"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/calender_day_bg1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Title Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <com.tny.utils.MyTextView
+        android:id="@+id/view_history_row_time"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/calender_day_bg1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Title Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <com.tny.utils.MyTextView
+        android:id="@+id/view_history_row_date"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/calender_day_bg1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Title Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+</LinearLayout>

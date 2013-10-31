@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/heder_bck" >
+<Button
+            android:id="@+id/stripper_edit_profile_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/cbtn_back"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/stripper_edit_profile_done"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_done" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/stripper_edit_profile_imageview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/img_cont"
+                   
+                    android:src="@drawable/profileimage" />
+
+                <Button
+                    android:id="@+id/stripper_edit_profile_select_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Browse" />
+
+            </LinearLayout>
+<EditText
+                android:id="@+id/stripper_edit_profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Name"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" >
+
+            </EditText>
+            
+
+            <EditText
+                android:id="@+id/stripper_edit_profile_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/stripper_edit_profile_conformpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint=" Conform Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+<Spinner
+                android:id="@+id/stripper_edit_profile_country"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:background="@drawable/spnner1"
+                android:paddingLeft="7dp"
+                />
+
+            <Spinner
+                android:id="@+id/stripper_edit_profile_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spnner1"
+                android:paddingLeft="7dp" />
+
+            <EditText
+                android:id="@+id/stripper_edit_profile_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Zip Code"
+                android:inputType="number"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:maxLength="8"
+                android:textColor="@color/white" >
+
+            </EditText>
+
+            <Spinner
+                android:id="@+id/stripper_edit_profile_workingat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spnner1"
+                android:paddingLeft="7dp" />
+
+            <com.tny.utils.MyTextView
+                android:id="@+id/stripper_edit_profile_addmore"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:text="Add more"
+                android:textColor="@color/red" />
+          
+            <EditText
+                android:id="@+id/stripper_edit_profile_wagerate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Wage Rate"
+                android:inputType="number"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/stripper_edit_profile_referanceid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_2_edittext_back"
+                android:ellipsize="end"
+                android:ems="10"
+                android:hint="  Referral ID"
+                android:lines="1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+            
+            
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/spnner2" >
+
+    <Spinner
+        android:id="@+id/stripper_edit_profile_race"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:background="@null"
+        android:padding="5dp"
+        >
+       
+    </Spinner>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spnner2" >
+
+                <EditText
+                    android:id="@+id/stripper_edit_profile_stats"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:hint="  Stats"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/spnner2" >
+
+    <EditText
+        android:id="@+id/stripper_edit_profile_age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:background="@null"
+        android:ellipsize="end"
+        android:ems="10"
+        android:editable="false"
+        android:hint="  age"
+        android:lines="1"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spnner2" >
+
+                <EditText
+                    android:id="@+id/stripper_edit_profile_haircolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:hint="  Hair color"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spnner2" >
+
+                <EditText
+                    android:id="@+id/stripper_edit_profile_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:maxLength="4"
+                    android:hint="  Height (cm)"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

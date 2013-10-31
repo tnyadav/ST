@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/heder_bck" >
+
+<!--         <ImageView -->
+<!--             android:id="@+id/ImageView1" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:src="@drawable/stripper_detail" /> -->
+
+        <com.tny.utils.MyTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Dancer Profile"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="10dp"
+         android:scrollbars="none"
+        android:layout_marginRight="10dp" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+              >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/stripper_book_imageview"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="1dp"
+                        android:padding="2dp"
+                        android:background="@drawable/img_cont"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/profileimage" />
+
+                    <Button
+                        android:id="@+id/stripper_book_morepicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/myprofile_btn_morephotos"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/stripper_book_addtofaverot"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/add_to_favetites"
+                        android:padding="2dp"
+                        android:textColor="#fff"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" >
+
+                    <com.tny.utils.MyTextView
+                        android:id="@+id/stripper_book_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mandy Moor"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white" />
+
+                    <com.tny.utils.MyTextView
+                        android:id="@+id/stripper_book_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Age: 22"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/grey" />
+
+                    <com.tny.utils.MyTextView
+                        android:id="@+id/stripper_book_hair_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Ethnicity: N/A"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <com.tny.utils.MyTextView
+                            android:id="@+id/stripper_book_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Stats: 36/24/36"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/grey" />
+
+                        <com.tny.utils.MyTextView
+                            android:id="@+id/stripper_book_viewallinfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="View all info"
+                            android:textColor="@color/yello" />
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/ratingbar"
+                        style="@style/foodRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                         android:numStars="5"
+                        
+                         />
+
+                    <com.tny.utils.MyTextView
+                        android:id="@+id/stripper_book_rateingtextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:drawableLeft="@drawable/sep"
+                        android:drawableRight="@drawable/sep"
+                        android:text="2/5"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/yello" />
+
+                    <com.tny.utils.MyTextView
+                        android:id="@+id/stripper_book_viewreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/myprofile_txt_reviews" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3" >
+
+                <Button
+                    android:id="@+id/stripper_book_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/book_rate" />
+
+                <Button
+                    android:id="@+id/stripper_book_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/book_send_message" />
+
+                <Button
+                    android:id="@+id/stripper_book_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/book_report" />
+            </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/stripper_book_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/book_now" />
+
+                <Button
+                    android:id="@+id/stripper_book_travel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/travel" />
+            
+            </LinearLayout>
+            <View
+     android:id="@+id/view1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:background="@drawable/shadow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".4"
+                android:orientation="vertical" >
+
+                <com.tny.utils.MyTextView
+                    android:id="@+id/stripper_book_strippercurrencytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Places you Work at"
+                    android:textSize="24dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <Button
+                        android:id="@+id/stripper_book_addressprevious"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/arrow_left" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.80"
+                        android:orientation="vertical" >
+
+                        <com.tny.utils.MyTextView
+                            android:id="@+id/stripper_book_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:text="No Club Found"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/yello" />
+
+                        <com.tny.utils.MyTextView
+                            android:id="@+id/stripper_book_address2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                      
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/stripper_book_addressnext"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
