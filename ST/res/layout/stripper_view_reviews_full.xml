@@ -123,7 +123,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:padding="2dp"
-            android:src="@drawable/profileimage"
+            android:src="@drawable/img"
             android:background="@drawable/list_img" />
 
         <LinearLayout

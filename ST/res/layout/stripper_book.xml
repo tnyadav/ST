@@ -67,7 +67,7 @@
                         android:padding="2dp"
                         android:background="@drawable/img_cont"
                         android:scaleType="fitXY"
-                        android:src="@drawable/profileimage" />
+                        android:src="@drawable/img" />
 
                     <Button
                         android:id="@+id/stripper_book_morepicture"
@@ -100,7 +100,7 @@
                         android:id="@+id/stripper_book_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Mandy Moor"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/white" />
 
@@ -109,7 +109,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
-                        android:text="Age: 22"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/grey" />
 
@@ -118,12 +118,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
-                        android:text="Ethnicity: N/A"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/grey" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical" >
 
@@ -132,13 +132,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
-                            android:text="Stats: 36/24/36"
+                            android:text=""
                             android:textAppearance="?android:attr/textAppearanceMedium"
                             android:textColor="@color/grey" />
 
                         <com.tny.utils.MyTextView
                             android:id="@+id/stripper_book_viewallinfo"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="3dp"
                             android:text="View all info"
@@ -162,7 +162,7 @@
                         android:layout_marginTop="3dp"
                         android:drawableLeft="@drawable/sep"
                         android:drawableRight="@drawable/sep"
-                        android:text="2/5"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/yello" />
 

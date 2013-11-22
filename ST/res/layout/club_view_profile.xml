@@ -67,7 +67,7 @@
                         android:padding="2dp"
                         android:background="@drawable/img_cont"
                         android:scaleType="fitXY"
-                        android:src="@drawable/profileimage" />
+                        android:src="@drawable/img" />
 
                     <Button
                         android:id="@+id/club_view_profile_morepicture"
@@ -100,7 +100,7 @@
                         android:id="@+id/club_view_profile_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Club 99"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/white" />
 
@@ -109,7 +109,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
-                        android:text="Address : ABC,street,texas"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/grey" />
 
@@ -118,7 +118,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
-                        android:text="Number :1222888"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/grey" />
 
@@ -248,7 +248,7 @@
                                 android:background="@drawable/img_cont"
                                 android:padding="2dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/profileimage" />
+                                android:src="@drawable/img" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -262,7 +262,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:singleLine="true"
-                                android:text="Mandy Moor"
+                                android:text=""
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@color/red" />
 
@@ -271,7 +271,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="3dp"
-                                android:text="Age: 24"
+                                android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:textColor="@color/grey" />
 
@@ -281,7 +281,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="3dp"
                                 android:singleLine="true"
-                                android:text="HairColor :Brown"
+                                android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:textColor="@color/grey" />
 
@@ -290,7 +290,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="3dp"
-                                android:text="Stats: 36/24/36"
+                                android:text=""
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:textColor="@color/grey" />
 

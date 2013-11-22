@@ -63,7 +63,7 @@
                     android:layout_margin="1dp"
                     android:background="@drawable/img_cont"
                    
-                    android:src="@drawable/profileimage" />
+                    android:src="@drawable/img" />
 
                 <Button
                     android:id="@+id/stripper_edit_profile_select_image"

@@ -207,9 +207,9 @@ public void onResume() {
 	private void setValues() {
 		
 				strSquareFoot=et_SquareFoot.getText().toString();
-				strMinAge=et_SquareFoot.getText().toString();
-				strDancerCount=et_SquareFoot.getText().toString();
-				strYearCount=et_SquareFoot.getText().toString();
+				strMinAge=et_MinAge.getText().toString();
+				strDancerCount=et_DancerCount.getText().toString();
+				strYearCount=et_YearCount.getText().toString();
 				int checkedRadioButton =	rbgTopless.getCheckedRadioButtonId();
 				switch (checkedRadioButton) {
 				case R.id.topless_radio0:

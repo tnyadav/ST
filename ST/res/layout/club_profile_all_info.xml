@@ -336,7 +336,7 @@
                         android:id="@+id/club_edit_profile_minimumage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dancers"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/darkyello" />
                 </LinearLayout>

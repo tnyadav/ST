@@ -64,7 +64,7 @@
                         android:background="@drawable/img_cont"
                         android:padding="2dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/profileimage" />
+                        android:src="@drawable/img" />
 
                     <com.tny.utils.MyTextView
                         android:id="@+id/fan_profile_name1"
@@ -72,7 +72,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="2dp"
-                        android:text="TextView"
+                        android:text=""
                         android:textColor="@color/white" />
 
                     <Button
@@ -105,7 +105,7 @@
                         android:layout_height="50dp"
                         android:background="@drawable/spnner2"
                         android:paddingLeft="5dip"
-                        android:text="Mandy Moor"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
@@ -117,7 +117,7 @@
                         android:layout_marginTop="3dp"
                         android:background="@drawable/spnner2"
                         android:paddingLeft="5dip"
-                        android:text="Age: 22"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/grey"
                         android:textSize="15dp" />
@@ -141,7 +141,7 @@
                         android:layout_marginTop="3dp"
                         android:background="@drawable/spnner2"
                         android:paddingLeft="5dip"
-                        android:text="Stats: 36/24/36"
+                        android:text=""
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:textColor="@color/grey"
                         android:textSize="15dp" />

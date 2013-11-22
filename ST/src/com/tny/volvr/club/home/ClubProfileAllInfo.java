@@ -50,7 +50,7 @@ public class ClubProfileAllInfo extends BaseFragment {
 		back=(Button)view.findViewById(R.id.club_edit_profile_back);
 		back.setOnClickListener(listener);
 		edit=(Button)view.findViewById(R.id.club_edit_profile_edit);
-
+		edit.setVisibility(View.GONE);
 		Name=(TextView)view.findViewById(R.id.club_edit_profile_name);
 
 		Email=(TextView)view.findViewById(R.id.club_edit_profile_email);
@@ -97,7 +97,9 @@ public class ClubProfileAllInfo extends BaseFragment {
 		Zipcode.setText(Clubprofile.clubs.getClub_zip_code());
 		Referalid.setText(StripperInfo.user_referral_id);
 		SquareFoot.setText(Clubprofile.clubs.getClub_area());
-		MinAge.setText(ProjectUtils.getAge(Clubprofile.clubs.getClub_allowed_minage()));
+		//MinAge.setText(ProjectUtils.getAge(Clubprofile.clubs.getClub_allowed_minage()));
+		MinAge.setText(Clubprofile.clubs.getClub_allowed_minage());
+		
 		DancerCount.setText(Clubprofile.clubs.getClub_dancercount());
 	//	YearCount.setText(Clubprofile.clubs.getCluby);
 		Topless.setText(Clubprofile.clubs.getClub_topless());

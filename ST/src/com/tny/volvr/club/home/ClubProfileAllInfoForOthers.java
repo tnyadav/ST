@@ -68,9 +68,11 @@ public class ClubProfileAllInfoForOthers extends ClubProfileAllInfo {
 							Zipcode.setText(Clubprofile.clubs.getClub_zip_code());
 							Referalid.setText(StripperInfo.user_referral_id);
 							SquareFoot.setText(Clubprofile.clubs.getClub_area());
-							MinAge.setText(ProjectUtils.getAge(Clubprofile.clubs.getClub_allowed_minage()));
+							//MinAge.setText(ProjectUtils.getAge(Clubprofile.clubs.getClub_allowed_minage()));
+							MinAge.setText(Clubprofile.clubs.getClub_allowed_minage());
+							
 							DancerCount.setText(Clubprofile.clubs.getClub_dancercount());
-						//	YearCount.setText(Clubprofile.clubs.getCluby);
+							YearCount.setText(Clubprofile.clubs.getClub_yearcount());
 							Topless.setText(Clubprofile.clubs.getClub_topless());
 							FullNude.setText(Clubprofile.clubs.getClub_nude());
 							JouseBar.setText(Clubprofile.clubs.getClub_juicebar());
@@ -78,6 +80,7 @@ public class ClubProfileAllInfoForOthers extends ClubProfileAllInfo {
 							FullBar.setText(Clubprofile.clubs.getClub_fulbar());
 							FoodKitchen.setText(Clubprofile.clubs.getClub_foodkitchen());
 							EventCast.setText(Clubprofile.clubs.getClub_eventcost());
+							
 						}else {
 							
 						}

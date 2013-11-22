@@ -123,8 +123,12 @@ public class DancerViewProfile extends BaseFragment {
 		  e.printStackTrace(); }
          haicolor = (TextView) view.findViewById(R.id.stripper_book_hair_color);
 		 haicolor.setText(stripperList.haicolor);
+		 
 		 status = (TextView) view.findViewById(R.id.stripper_book_status);
 	     status.setText("Stats: "+stripperList.stats);
+	   //  status.setText("Stats: tnhvghgjhghgjgkj");
+			
+		// Toast.makeText(getActivity(), "Stats: "+stripperList.stats, 1).show();
 		
 		rateing = (TextView) view
 				.findViewById(R.id.stripper_book_rateingtextview);

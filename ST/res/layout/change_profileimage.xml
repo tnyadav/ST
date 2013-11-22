@@ -51,7 +51,7 @@
                 android:maxWidth="150dp"
                 android:padding="2dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/profileimage" />
+                android:src="@drawable/img" />
 
             <com.tny.utils.MyTextView
                 android:id="@+id/name"
