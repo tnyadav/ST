@@ -143,7 +143,6 @@
                 android:hint=" Confirm password"
                 android:inputType="textPassword"
                 android:lines="1"
-                android:maxLength="20"
                 android:paddingLeft="7dp"
                 android:singleLine="true"
                 android:textColor="@color/white" />
@@ -158,7 +157,8 @@
                 android:hint="  Email"
                 android:imeOptions="actionDone"
                 android:lines="1"
-                android:paddingLeft="7dp"
+                android:inputType="textEmailAddress"
+               android:paddingLeft="7dp"
                 android:singleLine="true"
                 android:textColor="@color/white" />
 
@@ -169,6 +169,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/signup_2_edittext_back"
                 android:ellipsize="end"
+                android:inputType="textPassword"
                 android:hint=" Confirm Email"
                 android:imeOptions="actionDone"
                 android:lines="1"

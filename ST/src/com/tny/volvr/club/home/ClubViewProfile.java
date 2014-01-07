@@ -98,10 +98,12 @@ public class ClubViewProfile extends BaseFragment {
 
 	private void setContent() 
 	{
-//		StripperList stripperList=StripperList.stripperInfoList.get(position);
+		ClubInfo clubs=ClubInfo.clubInfolist.get(position);
 		clubname = (TextView) view.findViewById(R.id.club_view_profile_name);
 		clubname.setText(ClubInfo.clubInfolist.get(position).club_name);
 		clubaddress= (TextView) view.findViewById(R.id.club_view_profile_address);
+		clubaddress.setText("Address : "+UIUtils.checkBlanck(clubs.club_city,false)+" "+UIUtils.checkBlanck(clubs.club_state,false)+" "+UIUtils.checkBlanck(clubs.club_country,true));
+		
 		//clubname= (TextView) view.findViewById(R.id.club_profile_number);
 		
 		rateing = (TextView) view

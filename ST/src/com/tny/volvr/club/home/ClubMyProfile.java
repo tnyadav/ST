@@ -26,12 +26,14 @@ import com.tny.utils.Callback;
 import com.tny.utils.JsonResponse;
 import com.tny.utils.ProjectUtils;
 import com.tny.utils.SignupDetail;
+import com.tny.utils.UIUtils;
 import com.tny.volvr.base.AppConstants;
 import com.tny.volvr.base.BaseFragment;
 import com.tny.volvr.common.AddOffers;
 import com.tny.volvr.dancer.home.DancerAddMore;
 import com.tny.volvr.dancer.home.ViewReview;
 import com.tny.volvr.more.StripperViewOffer;
+import com.volvr.beans.ClubInfo;
 import com.volvr.beans.Stripper;
 import com.volvr.beans.StripperInfo;
 import com.volvr.profiledata.Clubprofile;
@@ -100,11 +102,13 @@ public class ClubMyProfile extends BaseFragment {
 		clubprofileimage = (ImageView) view
 				.findViewById(R.id.club_profile_imageview);
 		//clubprofileimage.setImageBitmap(ProjectUtils.getBitmapFromURL(StripperInfo.user_avatar));
+	//	ClubInfo clubInfo=
         imageLoader.DisplayImage(StripperInfo.user_avatar, clubprofileimage);
 		clubname = (TextView) view.findViewById(R.id.club_profile_name);
 		clubname.setText(Clubprofile.clubs.getClub_name());
 		clubaddress= (TextView) view.findViewById(R.id.club_profile_address);
-		clubaddress.setText("Address : "+StripperInfo.user_address_city+","+StripperInfo.user_address_state+","+StripperInfo.user_address_country);
+		
+		clubaddress.setText("Address : "+UIUtils.checkBlanck(Clubprofile.clubs.getClub_city(),false)+" "+UIUtils.checkBlanck(Clubprofile.clubs.getClub_state(),false)+" "+UIUtils.checkBlanck(Clubprofile.clubs.getClub_country(),true));
 		clubname= (TextView) view.findViewById(R.id.club_profile_number);
 		clubviewallinfo = (TextView) view
 				.findViewById(R.id.club_profile_viewallinfo);

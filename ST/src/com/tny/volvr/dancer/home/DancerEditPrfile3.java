@@ -1,5 +1,6 @@
 package com.tny.volvr.dancer.home;
 
+import java.io.ByteArrayOutputStream;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -10,6 +11,7 @@ import org.apache.http.HttpVersion;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.mime.MultipartEntity;
+import org.apache.http.entity.mime.content.ByteArrayBody;
 import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.params.BasicHttpParams;
@@ -22,6 +24,9 @@ import org.json.JSONObject;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
@@ -329,18 +334,18 @@ public class DancerEditPrfile3 extends BaseFragment {
 					bytearray_of_drawable = null;
 					Log.e("image=", "==" + image);
 
-					//					try {
-					//						Drawable d = Drawable.createFromPath(image);
-					//						Bitmap drawable_bitmap = ((BitmapDrawable) d)
-					//								.getBitmap();
-					//						ByteArrayOutputStream outstream = new ByteArrayOutputStream();
-					//						drawable_bitmap.compress(Bitmap.CompressFormat.JPEG,
-					//								100, outstream);
-					//						bytearray_of_drawable = outstream.toByteArray();
-					//					} catch (Exception e1) {
-					//						// TODO Auto-generated catch block
-					//						e1.printStackTrace();
-					//					}
+										try {
+											Drawable d = Drawable.createFromPath(image);
+											Bitmap drawable_bitmap = ((BitmapDrawable) d)
+													.getBitmap();
+											ByteArrayOutputStream outstream = new ByteArrayOutputStream();
+											drawable_bitmap.compress(Bitmap.CompressFormat.JPEG,
+													100, outstream);
+											bytearray_of_drawable = outstream.toByteArray();
+										} catch (Exception e1) {
+											// TODO Auto-generated catch block
+											e1.printStackTrace();
+										}
 
 					HttpPost httppost = new HttpPost(Constant.SERVER_URL);
 					HttpParams params1 = new BasicHttpParams();
@@ -362,6 +367,13 @@ public class DancerEditPrfile3 extends BaseFragment {
 								"editprofile"));
 						multipartEntity.addPart("user_fullname", new StringBody(
 								name));
+						try {
+							multipartEntity.addPart("user_avatar",
+									new ByteArrayBody(bytearray_of_drawable,
+											"image/bmp", "one.png"));
+						} catch (Exception e1) {
+							e1.printStackTrace();
+						}
 						multipartEntity.addPart("user_id", new StringBody(""
 								+ StripperInfo.user_id));
 						multipartEntity.addPart("user_address_country",

@@ -156,6 +156,17 @@ public class UIUtils {
 		
 		return html.toString();
 	}*/
-	
+	public static String checkBlanck(String string,boolean isLast) {
+		
+		if (string==null||string.equals("")) {
+			return "";
+		}else {
+			if (isLast) {
+				return string;
+			}else {
+				return string+",";
+			}
+		}
+	}
 }
 

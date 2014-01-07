@@ -128,9 +128,8 @@ public void onResume() {
 		profileimage = (ImageView) view
 				.findViewById(R.id.stripper_profile_imageview);
 		profileimage.setOnClickListener(listener);
-	//	profileimage.setImageBitmap(ProjectUtils.getBitmapFromURL(StripperInfo.user_avatar));
-		
-		if(StripperInfo.user_avatar.contains("http"))
+		imageLoader.DisplayImage(StripperInfo.user_avatar, profileimage);
+		/*if(StripperInfo.user_avatar.contains("http"))
 		{
 			imageLoader.DisplayImage(StripperInfo.user_avatar, profileimage);
 		}
@@ -138,7 +137,7 @@ public void onResume() {
 		{
 			profileimage.setImageBitmap(Util1.decodeFile(new File(StripperInfo.user_avatar)));
 		}
-		
+		*/
 
 		// ************************************************************************************
 		i = 0;
